@@ -1,0 +1,178 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(0, 90, 255);
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border-bottom: 5px solid black;
+    overflow-x: hidden;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 40px;
+    box-shadow: rgb(0, 0, 0) 1px 1px 40px 1px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    max-width: 800px;
+}
+
+label{
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+#center{
+    text-align: center;
+}
+
+input{
+    border: none;
+    max-width: 130px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    outline: 1px solid rgb(0, 0, 0);
+}
+
+input:focus{
+    outline: 1px solid black;
+    transition: 0.8s;
+    border: none;
+}
+
+.inputs{
+   display: flex;
+   gap: 20px;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+#scaleButton{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid white;
+    cursor: pointer;
+    padding: 8px;
+    width: 15%;
+    transition: 0.8s;
+    border: black solid 2px;
+    border-radius: 20px;
+    font-weight: bold;
+    width: 100px;
+}
+
+#scaleButton:hover{
+    background-color: rgb(0, 90, 255);
+    font-weight: bold;
+    color: white;
+    border: white solid 2px;
+}
+
+.remove{
+    display: flex;
+    gap: 20px 5px; 
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 320px;
+}
+
+#playerList{
+    display: flex;
+    background-color: rgb(29, 108, 255);
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+#playerList ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 80px 30px 20px;
+    width: 35%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    margin: 20px;
+}
+
+#playerList li{
+    font-size: 20px;
+    width: 130%;
+}
+
+@media(max-width: 500px){
+     #playerList li{
+        font-size: 15px;
+        width: 150%;
+    }
+}
+
+@media(max-width: 400px){
+    .display{
+        padding: 0;
+    }
+    #center{
+        font-size: 18px;
+    }
+    .inputs{
+        display: flex;
+        gap: 3px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+     }
+     #playerList li{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 323px){
+    #center{
+        font-size: 16px;
+    }
+    label{
+        font-size: 14px;
+    }
+    .remove{
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+        padding: 0px 60px 0px 60px;
+    }
+    #scaleButton{
+        width: 70px;
+        font-size: 10px;
+    }
+    .inputs{
+        width: 40px;
+    }
+}
